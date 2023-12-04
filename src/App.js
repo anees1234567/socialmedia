@@ -1,13 +1,26 @@
 
 import './App.css';
+import { Box,Container,Stack } from '@mui/material';
+import Sidebar from './Components/Sidebar';
+import Rightbar from './Components/Rightbar';
+import Feed from './Components/Feed';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
-      <h2>this is the social media app  am trying to develop using react </h2>
-      
-    </div>
+    <>
+    
+          <Box sx={{backgroundColor:"red"}}>
+                  <Stack  direction={'row'} spacing={1}>
+                        <Sidebar/>
+                        <Feed/>
+                        <Rightbar/>
+                  </Stack>
+
+          </Box>
+    
+    
+    
+    </>
   );
 }
 
