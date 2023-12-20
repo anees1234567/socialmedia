@@ -1,13 +1,27 @@
 
 import './App.css';
+import { Box,Container,Stack } from '@mui/material';
+import Sidebar from './Components/Sidebar';
+import Rightbar from './Components/Rightbar';
+import Feed from './Components/Feed';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
-      <h2>this is the social media app  am trying to develop using react </h2>
-      
-    </div>
+    <>
+    
+          <Box flexDirection={'column'}>
+                    <Navbar />
+                  <Stack  direction={'row'}  justifyContent={'space-between'}>
+                        <Sidebar/>
+                        <Feed/>
+                        <Rightbar/>
+                  </Stack>
+          </Box>
+    
+    
+    
+    </>
   );
 }
 
