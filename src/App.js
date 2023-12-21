@@ -8,9 +8,9 @@ import Navbar from './Components/Navbar';
 
 function App() {
   const theme = createTheme({
-    palette: {
-      mode: 'light',
-    },
+    // palette: {
+    //   mode: 'dark',
+    // },
     shape:{
       borderRadius:"10px"
     }
