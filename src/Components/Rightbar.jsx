@@ -3,7 +3,7 @@ import { Box } from '@mui/material'
 function Rightbar() {
   return (
 <Box sx={{
-backgroundColor:"red",
+backgroundColor:"black",
 display:{xs:'none',sm:'block'}}} 
 flex={3}p={1}>
   
