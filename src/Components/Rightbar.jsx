@@ -5,7 +5,7 @@ function Rightbar() {
 <Box sx={{
 backgroundColor:"black",
 display:{xs:'none',sm:'block'}}} 
-flex={3}p={1}>
+flex={4} p={1}>
   
   Rightbar
   
