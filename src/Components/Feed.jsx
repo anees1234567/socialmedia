@@ -132,7 +132,7 @@ function Feed() {
   
 
   return (
-    <Box  flex={8} p={1}>
+    <Box  flex={6} p={1} sx={{height:'100%',backgroundColor:'red',overflow:'y'}}>
       {postsArray.map((item) => (
         <Post {...item} key={item.name} />
       ))}

@@ -18,8 +18,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
           <Box flexDirection={'column'}>
-                    <Navbar />
-              <Stack sx={{paddingTop:"9dvh"}}  direction={'row'}  justifyContent={'space-between'}>
+                    <Navbar    />
+              <Stack sx={{paddingTop:"15vh",height:'100vh'}}  direction={'row'}  justifyContent={'space-between'}>
                         <Sidebar/>
                         <Feed/>
                         <Rightbar/>
