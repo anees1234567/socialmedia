@@ -19,11 +19,11 @@ function App() {
     <ThemeProvider theme={theme}>
           <Box flexDirection={'column'}>
                     <Navbar />
-                  <Stack  direction={'row'}  justifyContent={'space-between'}>
+              <Stack sx={{paddingTop:"9dvh"}}  direction={'row'}  justifyContent={'space-between'}>
                         <Sidebar/>
                         <Feed/>
                         <Rightbar/>
-                  </Stack>
+                 </Stack>
           </Box>
     </ThemeProvider>
   );
