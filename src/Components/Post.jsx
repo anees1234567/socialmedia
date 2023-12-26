@@ -7,7 +7,7 @@ function Post(item) {
     
   return (
         <>
-     <Card  >
+     <Card sx={{marginTop:"2dvh"}}>
       <CardHeader
         avatar={
           <Avatar alt="Segun Adebayo" src={item.image} />

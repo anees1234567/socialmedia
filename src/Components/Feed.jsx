@@ -33,7 +33,7 @@ function Feed() {
     {
       name: "Charlie Brown",
       dateOfPost: "25-12-2023",
-      image: "public/assets/person/3.jpeg",
+      image: "/assets/person/3.jpeg",
       likeCount: 45,
       comment: [
         {
@@ -45,7 +45,7 @@ function Feed() {
     {
       name: "Eva Smith",
       dateOfPost: "25-12-2023",
-      image: "public/assets/person/4.jpeg",
+      image: "/assets/person/4.jpeg",
       likeCount: 88,
       comment: [
         {
@@ -57,7 +57,7 @@ function Feed() {
     {
       name: "Gary Wilson",
       dateOfPost: "25-12-2023",
-      image: "public/assets/person/5.jpeg",
+      image: "/assets/person/5.jpeg",
       likeCount: 62,
       comment: [
         {
@@ -69,7 +69,7 @@ function Feed() {
     {
       name: "Ivy Thomas",
       dateOfPost: "25-12-2023",
-      image: "public/assets/person/6.jpeg",
+      image: "/assets/person/6.jpeg",
       likeCount: 50,
       comment: [
         {
@@ -81,7 +81,7 @@ function Feed() {
     {
       name: "Kevin White",
       dateOfPost: "25-12-2023",
-      image: "public/assets/person/7.jpeg",
+      image: "/assets/person/7.jpeg",
       likeCount: 75,
       comment: [
         {
@@ -93,7 +93,7 @@ function Feed() {
     {
       name: "Mia Jackson",
       dateOfPost: "25-12-2023",
-      image: "public/assets/person/8.jpeg",
+      image: "/assets/person/8.jpeg",
       likeCount: 60,
       comment: [
         {
@@ -105,7 +105,7 @@ function Feed() {
     {
       name: "Oliver Miller",
       dateOfPost: "25-12-2023",
-      image: "public/assets/person/9.jpeg",
+      image: "/assets/person/9.jpeg",
       likeCount: 42,
       comment: [
         {
@@ -117,7 +117,7 @@ function Feed() {
     {
       name: "Quinn Taylor",
       dateOfPost: "25-12-2023",
-      image: "public\assets\person\{2}.jpeg",
+      image: "/assets/person/10.jpeg",
       likeCount: 55,
       comment: [
         {
@@ -132,7 +132,7 @@ function Feed() {
   
 
   return (
-    <Box sx={{ backgroundColor: "red" }} flex={8} p={1}>
+    <Box  flex={8} p={1}>
       {postsArray.map((item) => (
         <Post {...item} key={item.name} />
       ))}

@@ -50,7 +50,7 @@ function Navbar() {
 
 
   return (
-    <AppBar position='sticky' >
+    <AppBar position='fixed'>
       <StyledToolbar>
         <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>Connectix</Typography>
         <Instagram sx={{ display: { xs: 'block', sm: 'none' } }} />
