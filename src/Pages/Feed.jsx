@@ -144,7 +144,7 @@ function Feed() {
     }}
   >
       {postsArray.map((item) => (
-        <Post {...item} key={item.name} />
+        <Post {...item} />
       ))}
     </Box>
   );
