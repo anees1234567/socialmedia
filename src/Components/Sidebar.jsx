@@ -1,5 +1,4 @@
 import { Box, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
-import { blueGrey } from '@mui/material/colors';
 import {Mail,Feed, AddBox, Settings, Home, AccountCircle, Person, Group} from '@mui/icons-material';
 import React from 'react';
 
@@ -20,7 +19,7 @@ function Sidebar() {
   return (
     <Box sx={{display:{xs:'none',sm:'block'},height:'100%'}} flex={4} p={1} >
       {options.map((item) => (
-        <ListItem key={item} disablePadding  position={'sticky'}>
+        <ListItem key={item.text} disablePadding  position={'sticky'}>
           <ListItemButton>
             <ListItemIcon>
              {item.icon}

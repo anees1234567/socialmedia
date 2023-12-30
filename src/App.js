@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Box,Container,Stack,createTheme,ThemeProvider } from '@mui/material';
+import { Box,Stack,createTheme,ThemeProvider } from '@mui/material';
 import Sidebar from './Components/Sidebar';
 import Rightbar from './Components/Rightbar';
 import Feed from './Pages/Feed';

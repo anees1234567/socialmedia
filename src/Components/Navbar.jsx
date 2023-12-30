@@ -1,6 +1,6 @@
-import { AppBar, Toolbar, Typography, styled,InputBase,Badge,Menu } from '@mui/material';
+import { AppBar,  Typography, styled,InputBase,Badge,Menu } from '@mui/material';
 import React, { useState } from 'react';
-import {Mail, Notifications, Pets,Instagram} from '@mui/icons-material';
+import {Mail, Notifications, Instagram} from '@mui/icons-material';
 import * as Mui from '@mui/material'
 
 
@@ -22,7 +22,7 @@ const Search = styled(InputBase)(({ theme }) => ({
   width: '40%',
 }));
 
-const Icons = styled('Box')(({ theme }) => ({
+const Icons = styled('div')(({ theme }) => ({
   display: "none",
   alignItems: "center",
   gap:"20px",
@@ -34,7 +34,7 @@ const Icons = styled('Box')(({ theme }) => ({
 
 
 
-const User= styled('Box')(({theme})=>({
+const User= styled('div')(({theme})=>({
   
   display:"flex",
   gap:"5px",
@@ -44,8 +44,8 @@ const User= styled('Box')(({theme})=>({
 
 
 function Navbar() {
-  const [open, setOpen] = useState(true);
-  const [Value, setvalue] = useState("");
+  const [open, setOpen] = useState(false);
+  
 
 
 
@@ -85,9 +85,9 @@ function Navbar() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <Mui.MenuItem onClick={() => { setvalue('profile'); setOpen(false); }}>Profile</Mui.MenuItem>
-        <Mui.MenuItem onClick={() => { setvalue('MyAccount'); setOpen(false); }}>My account</Mui.MenuItem>
-        <Mui.MenuItem onClick={() => { setvalue('logOut'); setOpen(false); }}>LogOut</Mui.MenuItem>
+        <Mui.MenuItem onClick={() => {  setOpen(false); }}>Profile</Mui.MenuItem>
+        <Mui.MenuItem onClick={() => {  setOpen(false); }}>My account</Mui.MenuItem>
+        <Mui.MenuItem onClick={() => {  setOpen(false); }}>LogOut</Mui.MenuItem>
       </Menu>
 
           
