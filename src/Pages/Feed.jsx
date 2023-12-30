@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
-import Post from './Post'
+import Post from '../Components/Post'
 
 
 function Feed() {
@@ -132,7 +132,17 @@ function Feed() {
   
 
   return (
-    <Box  flex={6} p={1} sx={{height:'100%',backgroundColor:'red',overflow:'y'}}>
+    <Box
+    flex={6}
+    p={1}
+    sx={{
+      overflowY: 'scroll',
+      // Adjust scrollbar width using a CSS rule within sx
+      '&::-webkit-scrollbar': {
+        width: '5px',
+      },
+    }}
+  >
       {postsArray.map((item) => (
         <Post {...item} key={item.name} />
       ))}
