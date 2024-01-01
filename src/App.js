@@ -1,10 +1,10 @@
 
 import './App.css';
 import { Box,Stack,createTheme,ThemeProvider } from '@mui/material';
-import Sidebar from './Components/Sidebar';
-import Rightbar from './Components/Rightbar';
-import Feed from './Pages/Feed';
-import Navbar from './Components/Navbar';
+import Sidebar from './Components/leftside/Sidebar';
+import Rightbar from './Components/rightside/Rightbar';
+import Feed from './Components/middleside/Feed';
+import Navbar from './Components/navbar/Navbar';
 
 function App() {
   const theme = createTheme({

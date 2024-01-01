@@ -36,9 +36,9 @@ function Post(item) {
       />
       <CardActions
         sx={{
-          '& > button': {
-            minWidth: '136px',
-          },
+          display:'flex',
+          flexDirection:'row',
+          justifyContent:'center'
         }}
       >
         <Button startIcon={<ThumbUp/>}>Like</Button>

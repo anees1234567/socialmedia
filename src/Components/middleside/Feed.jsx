@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
-import Post from '../Components/Post'
+import Post from './Post'
 
 
 function Feed() {
@@ -144,7 +144,7 @@ function Feed() {
     }}
   >
       {postsArray.map((item) => (
-        <Post {...item} />
+        <Post key={item.name} {...item} />
       ))}
     </Box>
   );
