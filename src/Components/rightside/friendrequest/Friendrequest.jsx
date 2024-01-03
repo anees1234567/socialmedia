@@ -1,4 +1,5 @@
 import { Avatar, Box, Paper, Typography } from '@mui/material'
+import '../friendrequest/Friendrequest.css'
 import React from 'react'
 
 function Friendrequest() {
@@ -32,12 +33,16 @@ function Friendrequest() {
     </Typography>
     
    {friendRequests.map((item)=>(
-            <Paper sx={{marginTop:'10px'}}>
-            <Box sx={{display:'flex'}}>
+            <div style={{marginTop:'10px'}}>
+            <Box sx={{display:'flex',marginLeft:'15px'}}>
             <Avatar alt="Remy Sharp" src={item.avatar} />
             <Typography sx={{marginLeft:"10px"}}>{item.name}</Typography>
             </Box>
-     </Paper> )
+              <div className='requestbuttondiv'>
+                    <button className='btn'>confirm</button>
+                    <button className='btn2'>cancel</button>
+              </div>
+     </div> )
      )}
 
 
