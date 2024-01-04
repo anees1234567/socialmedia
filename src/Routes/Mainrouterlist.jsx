@@ -4,6 +4,7 @@ export const RouterListone = {
 
 
   export const RouterListTwo = {
+    root:"primary",
     saved:"/saved",
     profile:"/profile",
     friends: "/friends",

@@ -1,12 +1,10 @@
+import { Box, Stack, ThemeProvider, createTheme } from '@mui/material';
 import React from 'react';
-import { Box,Stack,createTheme,ThemeProvider } from '@mui/material';
-import Sidebar from '../Components/common/leftside/Sidebar';
-import Rightbar from '../Components/rightside/Rightbar';
-import Feed from '../Components/HomelayoutComponents/middleside/Feed';
+import { Outlet, useNavigate } from "react-router-dom";
 import Navbar from '../Components/common/navbar/Navbar';
+import Sidebar from '../Components/common/leftside/Sidebar';
 
-
-function HomeLayoutContainer() {
+function SecondoryLayoutContainer() {
 
     const theme = createTheme({
         // palette: {
@@ -22,12 +20,14 @@ function HomeLayoutContainer() {
               <Navbar    />
         <Stack sx={{paddingTop:"15vh",height:'80vh'}}  direction={'row'}  justifyContent={'space-between'}>
                   <Sidebar/>
-                  <Feed  />
-                  <Rightbar/>
+                  <section>
+                    <Outlet/>
+                  </section>
+                  
            </Stack>
     </Box>
 </ThemeProvider>
   )
 }
 
-export default HomeLayoutContainer
+export default SecondoryLayoutContainer

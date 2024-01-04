@@ -1,13 +1,13 @@
-import { RouterProvider } from "react-router-dom";
-import { RouterListone } from "./Routes/Mainrouterlist";
+import { MainRouter } from "./Routes/Routerlist";
 
 
-function App() {
-   
-    return <RouterProvider router={RouterListone} />;
+import { RouterProvider} from "react-router-dom";
 
-  
-}
+
+    function App() {
+        return <RouterProvider router={MainRouter} />;
+      }
+
 
 export default App
 
