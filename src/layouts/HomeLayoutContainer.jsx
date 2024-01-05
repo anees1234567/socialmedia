@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box,Stack,createTheme,ThemeProvider } from '@mui/material';
 import Sidebar from '../Components/common/leftside/Sidebar';
-import Rightbar from '../Components/rightside/Rightbar';
+import Rightbar from '../Components/HomelayoutComponents/rightside/Rightbar';
 import Feed from '../Components/HomelayoutComponents/middleside/Feed';
 import Navbar from '../Components/common/navbar/Navbar';
 
