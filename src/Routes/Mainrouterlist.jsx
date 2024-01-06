@@ -1,10 +1,10 @@
 export const RouterListone = {
-    home: "/",
+    home: "",
   };
 
 
   export const RouterListTwo = {
-    root:"primary",
+    root:"/",
     saved:"/saved",
     profile:"/profile",
     friends: "/friends",
