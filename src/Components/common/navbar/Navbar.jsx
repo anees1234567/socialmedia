@@ -2,6 +2,7 @@ import { AppBar,  Typography, styled,InputBase,Badge,Menu } from '@mui/material'
 import React, { useState } from 'react';
 import {Mail, Notifications, Instagram} from '@mui/icons-material';
 import * as Mui from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -45,19 +46,22 @@ const User= styled('div')(({theme})=>({
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  
-
+      const naviagateto=useNavigate()
+      
+  //  const viewmessenger=()=>{
+  //     naviagateto("/inbox")
+  //  }
 
 
   return (
-    <AppBar position='fixed' sx={{height:'15vh'}} >
+    <AppBar position='fixed' sx={{height:'15vh',backgroundColor:'blueviolet'}} >
       <StyledToolbar>
         <Typography sx={{ display: { xs: 'none', sm: 'block' } }}>Connectix</Typography>
         <Instagram sx={{ display: { xs: 'block', sm: 'none' } }} />
         <Search placeholder='Search Here'/>
         <Icons >
           <Badge badgeContent={4} color="error">
-          <Mail color="white" />
+          <Mail  onClick={()=>{naviagateto("/inbox")}}  color="white" />
           </Badge>
           <Badge badgeContent={4} color="error">
           <Notifications color="white" />

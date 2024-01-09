@@ -4,11 +4,14 @@ export const RouterListone = {
 
 
   export const RouterListTwo = {
-    root:"primary",
+    root:"",
+    Feeds:"/feeds",
+    inbox:"/inbox",
     saved:"/saved",
     profile:"/profile",
     friends: "/friends",
-    group: "/group",
+    group: "/groups",
     settings:"/settings"
+    
   };
 
