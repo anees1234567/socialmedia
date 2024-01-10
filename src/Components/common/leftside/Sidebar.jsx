@@ -24,7 +24,7 @@ function Sidebar() {
 
   
   return (
-    <Box sx={{display:{xs:'none',sm:'block'},height:'100%'}} flex={4} p={1} >
+    <Box sx={{display:{xs:'none',sm:'block'},height:'100%'}} flex={2} p={1} >
       {options.map((item) => (
         <ListItem key={item.text} disablePadding onClick={()=>navigateTo(item.path)} position={'sticky'}>
           <ListItemButton>
