@@ -5,7 +5,7 @@ import { Stack } from '@mui/material'
 
 function Inboxpage() {
   return (
-    <Stack  direction={'row'} style={{backgroundColor:'black',height:'80vh',width:'100vw'}}>
+    <Stack  direction={'row'} style={{height:'80vh',width:'100vw'}}>
 
 
         <Chatlist/>
