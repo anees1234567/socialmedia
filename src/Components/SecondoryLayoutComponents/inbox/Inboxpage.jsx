@@ -8,8 +8,8 @@ function Inboxpage() {
     <Stack  direction={'row'} style={{height:'80vh',width:'100vw'}}>
 
 
-        <Chatlist/>
-        <Chatbox/>
+<Chatlist style={{ height: '100%', width: '20vw' }} />
+    <Chatbox style={{ height: '100%', width: '80vw' }} />
 
 
 
