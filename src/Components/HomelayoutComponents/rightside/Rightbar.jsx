@@ -12,12 +12,11 @@ function Rightbar() {
 <Box sx={{display:{xs:'none',sm:'block'}, overflowY: 'scroll',
       // Adjust scrollbar width using a CSS rule within sx
       '&::-webkit-scrollbar': {
-        width: '5px',
+        width: '50px',
       }}} flex={4} p={1}>
 {birthdayList.length > 0 ? 
   <Birthday birthdayList={birthdayList} />
- : 
- console.log("no birthdays")
+ :   console.log("no birthdays")
 }
 <Activebadge  />
 <Friendrequest />
